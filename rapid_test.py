@@ -4,8 +4,9 @@ import time
 from config import keys 
 
 def scrip(k, browser): 
+	browser.implicitly_wait(10000)
 
-	browser.get("https://v2.waitwhile.com/welcome/mmdgraham")
+	browser.get("https://www.techbeamers.com/selenium-webdriver-waits-python/")
 
 	time.sleep(2)
 	browser.find_element_by_xpath('/html/body/app-root/welcome/div/div/section/div[2]/div[3]/div/button').click()
